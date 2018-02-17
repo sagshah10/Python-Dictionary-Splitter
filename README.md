@@ -21,7 +21,7 @@ The following sample dictionary will be used to explain how my module works:
 
 ### CRUD (Create, Retrieve, Update Delete)
 
-CRUD was one of the simplest and most straight forward concepts I learnt about in databases, and therefore I thought using such an approach would possibly make my module easy to operate. Therefore, with this in mind, my module has 4 major functions for a user:
+CRUD was one of the simplest and most straight forward concepts I learnt about at University, when I learnt about databases, and therefore I thought using such an approach would possibly make my module easy to operate. This made me decide to implement a CRUD approach for this module, and below expresses how it is implemented.
 
 
 #### 1) Create
