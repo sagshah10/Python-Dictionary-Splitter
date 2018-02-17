@@ -148,7 +148,7 @@ Deleting items from the split dictionary is also just as simple.
     using splitDict.Delete('a') - Would delete key "a" and all the items associated with key "a"
 
 
-# CONCLUSION
+# Conclusion
 
 I have tried my best to explain how to incorporate my module, however should there be any more questions, please don't hesitate to ask.
 
