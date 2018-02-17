@@ -15,8 +15,8 @@ When the module is run for the first time, it creates the following path "Resour
 The following sample dictionary will be used to explain how my module works:
 
     d = {
-            "a" : {"b" : 1, "c": 2},
-            "d" : 3
+           "a" : {"b" : 1, "c": 2},
+           "d" : 3
         }
 
 ### CRUD (Create, Retrieve, Update Delete)
@@ -30,11 +30,11 @@ The create function is intended to be used by the user only once, to either conv
 
 To use this function simply call:
 
-dictSplit.Create(#Here is where you pass an existing dictionary or leave it blank for it initialise necessary files to begin further splitting.)
+    dictSplit.Create(#Here is where you pass an existing dictionary or leave it blank for it initialise necessary files to begin further splitting.)
 
 NOTE: this is intended to be used by the user once!! calling it after it has already been executed, will result to the current split dictionaries being deleted and a new one being created on its place (literally, I have set it to delete the whole JSONData folder, and then it recreates a new split, regardless of whether a new dictionary is parsed or not.)
 
-    An example call to this function would look as such:
+Below shows examples of the ways this function can be called or executed:
 
     jsonDict.Create()
 
@@ -62,7 +62,7 @@ The retrieve function retrieves either the entire dictionary (if called without 
         "dictSplit.Retrieve('a', 'b')" to get the value 1.
 
 
-RETREIVE ONLY KEYS
+##### Just want to retrieve keys Only?
 If you would like to just retrieve a list of key names from the dictionary, you simply need to call:
 
     dictSplit.getKeys()     - By parsing no parameters it returns the keys stored on the "main.json" which is the parent to all other nests.
@@ -80,11 +80,11 @@ Implementing update frankly, was the hardest and most challenging aspect of this
 
 The Update function is contains 3 parameters and is defined as Update(Value, *Keys, replace = False):
 
-    a) Value - Here any type of data can be sent for value, whether it is a str, int, bool, array, dictionary, etc.., I have ensured I do the necessary work to adequately update the right data at the right location within the split dictionary (This is also why it was challenging).
+a) Value - Here any type of data can be sent for value, whether it is a str, int, bool, array, dictionary, etc.., I have ensured I do the necessary work to adequately update the right data at the right location within the split dictionary (This is also why it was challenging).
 
-    b) *Keys - This is used to identify the exact location where data must be updated.
+b) *Keys - This is used to identify the exact location where data must be updated.
 
-    c) replace - by default this is set to "False". Setting it to "True" means, that you want to replace all the contents of the location where you wish to update your data, with the values you have given to me.
+c) replace - by default this is set to "False". Setting it to "True" means, that you want to replace all the contents of the location where you wish to update your data, with the values you have given to me.
 
 Example of how to use this module to get the same result, as you would, using python:
 
