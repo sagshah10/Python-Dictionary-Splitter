@@ -167,4 +167,3 @@ The speed at which this module operates is definitely not as fast as when the wh
 Which although was 3 times slower, was still fairly quick in my opinion.
 
 I will later try to do more realistic tests, which test speed and memory use, and then hopefully I can share those results at a later stage.
-=======
