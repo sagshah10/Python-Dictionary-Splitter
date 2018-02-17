@@ -1,7 +1,6 @@
 from supportScript import *
 import json
 import os
-import re
 
 #####################################################################################################################
 ########################################### CREATE Part of CRUD #####################################################
@@ -54,12 +53,12 @@ def Create(d={}, count=None):
 
 
 #####################################################################################################################
-########################################### RETREIVE Part of CRUD #####################################################
-## Retreives either the whole dictionary or segments of the dictionary depending on what keys and whether if keys are parsed ##
+########################################### RETRIEVE Part of CRUD #####################################################
+## Retrieves either the whole dictionary or segments of the dictionary depending on what keys and whether if keys are parsed ##
 #####################################################################################################################
 
 
-def Retreive(*keys):
+def Retrieve(*keys):
     d = readDictFile("main.json")
 
     for key in keys:

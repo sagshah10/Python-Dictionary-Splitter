@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PYTHON DICTIONARY SPLITTER (JSON SPLITTER)
 
 As a recent graduate I have been constantly looking for ways to develop my skills. This project has been one such project where I wished to try and attempt to create something challenging that would not only, help me develop and put my skills to the test, but could also help other people. Before working on this project, I learnt about web scraping with python, and while I was learning it, I found that using the python dictionary (for accessing) / json (for offline storage) was a much more convenient way for handling data being scraped from the web. However, one major issue with python dictionary or json objects, is that they require to be constantly stored in RAM when a program is running, for it to be accessed, and this can lead to memory issues should a lot of data be held in it.
@@ -168,3 +169,10 @@ The speed at which this module operates is definitely not as fast as when the wh
 Which although was 3 times slower, was still fairly quick in my opinion.
 
 I will later try to do more realistic tests, which test speed and memory use, and then hopefully I can share those results at a later stage.
+=======
+# Python Dictionary Splitter
+
+I am new to github, therefore appologies for uploading without a completed read me. 
+
+A full read me, with detailed explanation of how my code works, comming soon.
+>>>>>>> ca88e9b4fee7f40c6c799d61f8ff10de02698e55
