@@ -40,7 +40,6 @@ Below shows examples of the ways this function can be called or executed:
 
     OR
 
-    d = {A Python Dictionary}
     jsonDict.Create(d)
 
 Both methods begin by creating a "main.json" file within the JSONData folder, and any nest are further split out based on a tracked split number, whilst if the length of a dictionary or split out dictionary was greater than the max limit identified on "setup.json", then the excess is split out into individual files called as "mainSplit1.json" or "0Split1.json" depending on the split number.
