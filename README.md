@@ -1,4 +1,4 @@
-# PYTHON DICTIONARY SPLITTER (JSON SPLITTER)
+# Python Dictionary Splitter (JSON Splitter)
 
 As a recent graduate I have been constantly looking for ways to develop my skills. This project has been one such project where I wished to try and attempt to create something challenging that would not only, help me develop and put my skills to the test, but could also help other people. Before working on this project, I learnt about web scraping with python, and while I was learning it, I found that using the python dictionary (for accessing) / json (for offline storage) was a much more convenient way for handling data being scraped from the web. However, one major issue with python dictionary or json objects, is that they require to be constantly stored in RAM when a program is running, for it to be accessed, and this can lead to memory issues should a lot of data be held in it.
 
