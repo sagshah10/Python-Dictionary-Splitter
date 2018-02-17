@@ -7,7 +7,6 @@ Therefore, this gave me the idea of developing my module, where I aim to split l
 However, I am finally happy to have it developed to a stage where it works as intended, and now I feel that there will be less bug fixing over increase or improved functionality for this module.
 
 
-
 ## How It Works?
 ** The aim for this module was for it to be imported for other scripts to use. Therefore, the following is based on a user having used "import dictSplit" on their script.
 
@@ -15,11 +14,10 @@ When the module is run for the first time, it creates the following path "Resour
 
 The following sample dictionary will be used to explain how my module works:
 
-d = {
-        "a" : {"b" : 1, "c": 2},
-        "d" : 3
-    }
-
+    d = {
+            "a" : {"b" : 1, "c": 2},
+            "d" : 3
+        }
 
 ### CRUD (Create, Retrieve, Update Delete)
 
@@ -36,14 +34,14 @@ dictSplit.Create(#Here is where you pass an existing dictionary or leave it blan
 
 NOTE: this is intended to be used by the user once!! calling it after it has already been executed, will result to the current split dictionaries being deleted and a new one being created on its place (literally, I have set it to delete the whole JSONData folder, and then it recreates a new split, regardless of whether a new dictionary is parsed or not.)
 
-An example call to this function would look as such:
+    An example call to this function would look as such:
 
-jsonDict.Create()
+    jsonDict.Create()
 
-OR
+    OR
 
-d = {A Python Dictionary}
-jsonDict.Create(d)
+    d = {A Python Dictionary}
+    jsonDict.Create(d)
 
 Both methods begin by creating a "main.json" file within the JSONData folder, and any nest are further split out based on a tracked split number, whilst if the length of a dictionary or split out dictionary was greater than the max limit identified on "setup.json", then the excess is split out into individual files called as "mainSplit1.json" or "0Split1.json" depending on the split number.
 
@@ -52,24 +50,27 @@ Both methods begin by creating a "main.json" file within the JSONData folder, an
 
 The retrieve function retrieves either the entire dictionary (if called without any parameters being parsed), or the data stored at a specific location based on the keys parsed by a user.
 
-to retrieve the entire dictionary, simply call:         dictSplit.Retrieve()
+    To retrieve the entire dictionary, simply call:
+        dictSplit.Retrieve()
 
-OR
+    OR
 
-To access particular dictionary data stored within keys:
-For example:                                    "d['a']['b']" would return 1, if d was stored in memory as the program was running.
-The same can be achieved by doing:              "dictSplit.Retrieve('a', 'b')" to get the value 1.
+    To access particular dictionary data stored within keys, for example:
+        "d['a']['b']" would return 1, if d was stored in memory as the program was running.
+
+    The same can be achieved by doing:
+        "dictSplit.Retrieve('a', 'b')" to get the value 1.
 
 
 RETREIVE ONLY KEYS
 If you would like to just retrieve a list of key names from the dictionary, you simply need to call:
 
-dictSplit.getKeys()     - By parsing no parameters it returns the keys stored on the "main.json" which is the parent to all other nests.
-                        - This would return ["a", "d"]
+    dictSplit.getKeys()     - By parsing no parameters it returns the keys stored on the "main.json" which is the parent to all other nests.
+                            - This would return ["a", "d"]
 
-OR...
+    OR...
 
-dictSplit("a")      - to get ["b", "c"] as a return.
+    dictSplit("a")      - to get ["b", "c"] as a return.
 
 #### 3) Update
 
@@ -139,17 +140,16 @@ Example 3 - Adding new keys and values to existing dictionary:
 
 Deleting items from the split dictionary is also just as simple.
 
-similar to "del d"
-using "splitDict.Delete()" - Would delete all contents within the split dictionaries.
+    similar to "del d"
+    using "splitDict.Delete()" - Would delete all contents within the split dictionaries.
 
-OR
+    OR
 
-Similar to "del d['a']"
-using splitDict.Delete('a') - Would delete key "a" and all the items associated with key "a"
+    Similar to "del d['a']"
+    using splitDict.Delete('a') - Would delete key "a" and all the items associated with key "a"
 
 
-
-##CONCLUSION
+# CONCLUSION
 
 I have tried my best to explain how to incorporate my module, however should there be any more questions, please don't hesitate to ask.
 
