@@ -172,7 +172,7 @@ I will later try to do more realistic tests, which test speed and memory use, an
 =======
 # Python Dictionary Splitter
 
-I am new to github, therefore appologies for uploading without a completed read me. 
+I am new to github, therefore appologies for uploading without a completed read me.
 
 A full read me, with detailed explanation of how my code works, comming soon.
 >>>>>>> ca88e9b4fee7f40c6c799d61f8ff10de02698e55
