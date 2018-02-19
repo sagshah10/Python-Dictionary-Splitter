@@ -4,7 +4,7 @@ As a recent graduate I have been constantly looking for ways to develop my skill
 
 Therefore, this gave me the idea of developing my module, where I aim to split large and/or nested dictionaries into separate files, and then have a convenient way to only access the data you want at any given point in time. As I mentioned I am a recent graduate, and I know this final submitted work doesn’t seem so, but this project took me, about 4 months to fully develop. The code that I have uploaded today is simply a completed and mostly refactored version of the original code. The reason why it took so long was because, initially I was using either several different loops or functions to perform actions or functions within the module, however, I found this to be very long and confusing to look back and debug. I later found that converting aspects of my code to a recursive function, reduced the challenges of reading, understanding and debugging the code. However, recursive functions also brought along their own problems, such as data being wrongly handled, or errors caused due to "endless recursion" of a function or between functions.
 
-However, I am finally happy to have it developed to a stage where it works as intended, and now I feel that there will be less bug fixing over increase or improved functionality for this module.
+However, I am finally happy to have developed it to a stage where it works as intended, and now I feel that there will be no or less bug fixing requests, over requests for increasing or improving functionality for this module.
 
 
 ## How It Works?
@@ -19,7 +19,7 @@ The following sample dictionary will be used to explain how my module works:
            "d" : 3
         }
 
-### CRUD (Create, Retrieve, Update Delete)
+### CRUD (Create, Retrieve, Update, Delete)
 
 CRUD was one of the simplest and most straight forward concepts I learnt about at University, when I learnt about databases, and therefore I thought using such an approach would possibly make my module easy to operate. This made me decide to implement a CRUD approach for this module, and below expresses how it is implemented.
 
